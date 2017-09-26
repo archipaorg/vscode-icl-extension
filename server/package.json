@@ -1,0 +1,28 @@
+{
+  "name": "icl-server",
+  "description": "Ichiro Configuration Language Server",
+  "version": "1.0.0",
+  "author": "archipa",
+  "license": "MPL-2.0",
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "@archipa/icl": "^1.0.6",
+    "glob": "^7.1.2",
+    "object-path": "^0.11.4",
+    "vscode-languageserver": "^3.1.0",
+    "vscode-uri": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/glob": "^5.0.32",
+    "@types/object-path": "^0.9.29",
+    "@types/node": "^6.0.87",
+    "vscode-languageserver": "^3.3.0",
+    "typescript": "^2.4.2"
+  },
+  "scripts": {
+    "compile": "installServerIntoExtension ../client ./package.json ./tsconfig.json && tsc -p .",
+    "watch": "installServerIntoExtension ../client ./package.json ./tsconfig.json && tsc --watch -p ."
+  }
+}

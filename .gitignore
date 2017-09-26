@@ -1,0 +1,14 @@
+
+.idea/inspectionProfiles/profiles_settings.xml
+
+.idea/modules.xml
+
+.idea/vcs.xml
+
+*.iml
+
+.idea/workspace.xml
+
+server/.idea/modules.xml
+
+server/.idea/workspace.xml
